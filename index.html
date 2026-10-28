@@ -147,7 +147,7 @@ async function renderPlate(num,card){
 $('#search').addEventListener('input',()=>{displayLimit=240;render()});$('#load-more').onclick=()=>{displayLimit+=240;render()};$('#reset').onclick=()=>{$('#search').value='';activeCategory='All';displayLimit=120;renderFilters();render()};$('#random').onclick=()=>{const rows=filtered();if(rows.length)openRecord(rows[Math.floor(Math.random()*rows.length)].id)};document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>setView(b.dataset.view));$('#close').onclick=closeModal;$('#modal').addEventListener('click',e=>{if(e.target===$('#modal'))closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 Promise.all([
  fetch('./data/symbols.json').then(r=>{if(!r.ok)throw new Error('Could not load starter symbols');return r.json()}),
- fetch('./data/symbols-pages-batch01.json').then(r=>{if(!r.ok)throw new Error('Could not load first vector batch');return r.json()}),
+ fetch('./data/symbols-pages-batch01.json').then(r=>r.json()).catch(()=>[]),
  fetch('./data/index-data.txt').then(r=>{if(!r.ok)throw new Error('Could not load book index');return r.text()})
 ]).then(async ([v,batch,b64])=>{
  visuals=[...v.map(r=>({...r,kind:'visual'})),...batch.map(r=>({...r,kind:'visual'}))];
