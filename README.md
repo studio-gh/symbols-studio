@@ -4,7 +4,7 @@ Arquivo visual independente de símbolos gráficos, baseado no *Symbol Sourceboo
 
 ## O que o site contém hoje
 
-- **15 redesenhos vetoriais esquemáticos** na coleção de estudos originais.
+- **15 redesenhos vetoriais esquemáticos** na coleção de estudos originais.\n- **118 símbolos vetorizados em SVG** das páginas impressas 34–36, com ficheiros individuais e referência de origem.
 - **1.825 entradas textuais do índice impresso**, com nomes e referências de páginas extraídos do PDF fornecido.
 - Uma aba **All sourcebook plates · local PDF** permite abrir as pranchas ilustradas no navegador. O PDF é selecionado localmente, sem ser enviado ao site. A galeria navega pelas páginas 26–247 do arquivo.
 - A interface separa **Visual symbols**, **Book index · text only** e a visualização local do PDF. A página inicial agora abre diretamente na coleção visual e oferece download de SVG individual nas fichas.
@@ -12,7 +12,9 @@ Arquivo visual independente de símbolos gráficos, baseado no *Symbol Sourceboo
 
 A extração automática do índice pode conter erros de OCR. Confira a página citada no PDF antes de usar uma referência em publicação acadêmica ou comercial. Os 118 SVGs das páginas 34–36 são vetorização automatizada inicial e podem conter imperfeições nos contornos.
 
-## SVGs individuais\n\nO catálogo compactado em `data/symbols-page34.json.gz`, `data/symbols-page35.json.gz` e `data/symbols-page36.json.gz` armazena cada desenho como SVG independente. O workflow usa `scripts/export_svg_catalog.py` para gerar arquivos `.svg` individuais e um ZIP de download durante a publicação. A primeira leva contém 118 símbolos das páginas impressas 34–36; isso não equivale ainda ao conteúdo visual completo do livro.\n\n## Publicação no GitHub Pages
+## SVGs individuais
+
+O catálogo compactado em `data/symbols-page34.json.gz`, `data/symbols-page35.json.gz` e `data/symbols-page36.json.gz` armazena cada desenho como SVG independente. O workflow usa `scripts/export_svg_catalog.py` para gerar arquivos `.svg` individuais e um ZIP de download durante a publicação. A primeira leva contém 118 símbolos das páginas impressas 34–36; isso não equivale ainda ao conteúdo visual completo do livro.\n\n## Publicação no GitHub Pages
 
 O workflow em `.github/workflows/pages.yml` publica os arquivos estáticos a cada push para `main`. Em **Settings → Pages**, mantenha Source como **GitHub Actions**.
 
