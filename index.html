@@ -33,24 +33,24 @@ footer{padding:28px clamp(20px,5vw,76px);border-top:1px solid var(--line);displa
  <div><p class="eyebrow">Archive / 001 — Graphic language</p><h1>Signs say<br>more than <em>words.</em></h1></div>
  <p class="intro">Um arquivo visual para explorar a linguagem dos símbolos. As fichas ilustradas são <strong>redesenhos esquemáticos</strong>; o índice textual ajuda a localizar assuntos e páginas no <em>Symbol Sourcebook</em>, de Henry Dreyfuss (1972). São duas camadas diferentes, agora separadas.</p>
 </section>
-<div class="sourceband"><span id="section-label">Visual studies · original redraws</span><span>Sourcebook / Henry Dreyfuss / 1972</span></div>
+<div class="sourceband"><span id="section-label">Complete book index · text references</span><span>Sourcebook / Henry Dreyfuss / 1972</span></div>
 <nav class="tabs" aria-label="Modo de navegação">
- <button class="tab active" data-view="visual">Visual symbols</button>
- <button class="tab" data-view="index">Book index · text only</button>
+ <button class="tab" data-view="visual">Visual symbols · 15</button>
+ <button class="tab active" data-view="index">Book index · 1,825 text entries</button>
 </nav>
 <section aria-label="Pesquisar símbolos">
  <div class="controls">
-  <div class="searchwrap"><span class="searchicon">⌕</span><input id="search" type="search" placeholder="Buscar símbolo por nome, significado ou palavra-chave..." aria-label="Buscar símbolos"></div>
+  <div class="searchwrap"><span class="searchicon">⌕</span><input id="search" type="search" placeholder="Buscar termo no índice do livro..." aria-label="Buscar no índice textual"></div>
   <button class="controlbtn" id="random">↗ Símbolo aleatório</button>
   <button class="controlbtn" id="reset">Limpar busca ×</button>
  </div>
  <div class="filters" id="filters"></div>
- <div class="gridhead"><span class="eyebrow" id="gridlabel">Redesenhos vetoriais</span><span class="count" id="count">Carregando…</span></div>
+ <div class="gridhead"><span class="eyebrow" id="gridlabel">Entradas textuais do índice</span><span class="count" id="count">Carregando…</span></div>
  <div class="symbolgrid" id="grid"></div>
  <div class="indexlist" id="index-list"></div>
  <div class="loadmore-wrap" id="loadmore-wrap" style="display:none"><button class="controlbtn" id="load-more">Carregar mais 120 ↓</button></div>
  <div class="empty" id="empty"><strong>Nenhum resultado encontrado.</strong>Tente outra busca ou remova os filtros.</div>
- <p class="statusnote" id="statusnote">As referências bibliográficas são separadas dos desenhos. O índice textual não representa símbolos ilustrados.</p>
+ <p class="statusnote" id="statusnote">O índice textual contém referências de página, não os desenhos dos símbolos. A coleção visual ainda está incompleta.</p>
 </section>
 </main>
 <footer>
@@ -67,7 +67,7 @@ footer{padding:28px clamp(20px,5vw,76px);border-top:1px solid var(--line);displa
 </div>
 <script>
 const BOOK = 'Henry Dreyfuss, Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols. New York: McGraw-Hill, 1972.';
-let visuals=[], indexRecords=[], activeCategory='All', currentView='visual', displayLimit=120, records=[];
+let visuals=[], indexRecords=[], activeCategory='All', currentView='index', displayLimit=120, records=[];
 const $=s=>document.querySelector(s);
 function slugify(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||'entry'}
 function categoryForPage(refs){const n=Number(String(refs).match(/\d{1,3}/)?.[0]||0);const ranges=[[34,38,'Accommodations and travel'],[39,47,'Agriculture'],[48,53,'Architecture'],[54,54,'Astronomy'],[55,57,'Biology'],[58,66,'Business'],[67,69,'Chemistry'],[70,79,'Communications'],[80,85,'Engineering'],[86,91,'Folklore'],[92,95,'Geography'],[96,97,'Geology'],[98,99,'Handling of goods'],[100,103,'Home economics'],[104,110,'Manufacturing'],[111,112,'Mathematics'],[113,119,'Medicine'],[120,122,'Meteorology'],[123,125,'Music'],[126,127,'Photography'],[128,129,'Physics'],[130,137,'Recreation'],[138,139,'Religion'],[140,142,'Safety'],[143,156,'Traffic'],[157,165,'Vehicle controls'],[166,230,'Graphic form'],[231,247,'Color']];return ranges.find(([a,b])=>n>=a&&n<=b)?.[2]||(n>=26&&n<=33?'Basic symbols & principles':'Index / uncategorized')}
