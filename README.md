@@ -1,19 +1,23 @@
 # Symbols Studio
 
-Arquivo visual independente de símbolos gráficos, inspirado na estrutura de consulta do *Symbol Sourcebook* de Henry Dreyfuss.
+Arquivo visual independente de símbolos gráficos, baseado no *Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols*, de Henry Dreyfuss (McGraw-Hill, 1972).
+
+## Cobertura do catálogo
+
+- Inclui mais de 1.800 entradas do índice impresso do livro, com nomes e referências de página extraídos do PDF fornecido.
+- Mantém 15 redesenhos vetoriais esquemáticos originais para os símbolos básicos.
+- Use os filtros **Original redraws** e **Complete book index** para separar as fichas desenhadas das referências bibliográficas.
+- As entradas do índice ajudam a localizar símbolos e assuntos no livro; elas não são reproduções gráficas das pranchas originais.
+- A extração automática pode conter erros de OCR. Confira a página citada no PDF antes de usar uma referência em publicação acadêmica ou comercial.
 
 ## Publicação no GitHub Pages
-1. Crie um repositório público chamado `symbols-studio` na conta `studio-gh`.
-2. Envie o conteúdo desta pasta para a branch `main`.
-3. Em **Settings → Pages**, escolha **Deploy from a branch**, branch `main`, pasta `/ (root)`. Salve.
-4. O site deverá ficar disponível em `https://studio-gh.github.io/symbols-studio/`.
 
-O workflow em `.github/workflows/pages.yml` também pode publicar pelo GitHub Actions se a opção de Pages estiver configurada para GitHub Actions.
+O workflow em `.github/workflows/pages.yml` publica os arquivos estáticos a cada push para `main`. Em **Settings → Pages**, mantenha Source como **GitHub Actions**.
 
-## Conteúdo e atribuição
-Cada registro em `data/symbols.json` tem um objeto `source` com autor, título, editora, ano, página e nota de crédito. O site usa descrições editoriais em português, não transcrições do livro. As formas SVG desta primeira versão são redesenhos esquemáticos originais para demonstrar a interface, não reproduções fac-similares das pranchas.
+URL: https://studio-gh.github.io/symbols-studio/
+
+## Fonte e atribuição
 
 Referência: Dreyfuss, Henry. *Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols*. New York: McGraw-Hill, 1972.
 
-## Estado do catálogo
-A primeira versão inclui uma seleção demonstrativa dos símbolos básicos listados no livro. A paginação deve ser conferida contra a edição usada antes de ampliar o catálogo. Não inclua scans, reproduções extensas ou desenhos protegidos sem verificar os direitos de uso.
+As descrições são sínteses editoriais. Os 15 símbolos desenhados no site são redesenhos esquemáticos originais, não scans nem fac-símiles das pranchas. Crédito bibliográfico não substitui autorização de reprodução.
