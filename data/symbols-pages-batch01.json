@@ -366,5 +366,815 @@
     },
     "kind": "visual",
     "svgMarkup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" role=\"img\" aria-label=\"Symbol reconstruction\"><g stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"60\" cy=\"60\" r=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M60 30V90M30 60H90\" stroke=\"currentColor\" stroke-width=\"3\"/></g></svg>"
+  },
+  {
+    "id": "study-01",
+    "name": "Boundary",
+    "pt": "Limite",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "34",
+    "keywords": [
+      "boundary",
+      "limite",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><circle cx=\"50\" cy=\"50\" r=\"29\"/><path d=\"M29 29L71 71\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "34",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-02",
+    "name": "Caution",
+    "pt": "Precaução",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "34",
+    "keywords": [
+      "caution",
+      "precaução",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M50 12L88 82H12Z\"/><path d=\"M50 35V57M50 69V71\" stroke-width=\"7\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "34",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-03",
+    "name": "Crossing",
+    "pt": "Cruzamento",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "35",
+    "keywords": [
+      "crossing",
+      "cruzamento",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><rect x=\"15\" y=\"15\" width=\"70\" height=\"70\" rx=\"4\"/><path d=\"M28 50H72M50 28V72\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "35",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-04",
+    "name": "Compass",
+    "pt": "Bússola",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "35",
+    "keywords": [
+      "compass",
+      "bússola",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M50 10L89 50L50 90L11 50Z\"/><circle cx=\"50\" cy=\"50\" r=\"15\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "35",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-05",
+    "name": "Direction marker",
+    "pt": "Marcador de direção",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "35",
+    "keywords": [
+      "direction marker",
+      "marcador de direção",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M15 25H85M15 50H68M15 75H85\"/><circle cx=\"76\" cy=\"50\" r=\"9\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "35",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-06",
+    "name": "Mountain",
+    "pt": "Montanha",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "35",
+    "keywords": [
+      "mountain",
+      "montanha",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M15 78L40 23L60 61L73 42L88 78Z\"/><circle cx=\"50\" cy=\"50\" r=\"8\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "35",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-07",
+    "name": "Target",
+    "pt": "Alvo",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "36",
+    "keywords": [
+      "target",
+      "alvo",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><circle cx=\"50\" cy=\"50\" r=\"34\"/><path d=\"M50 16V84M16 50H84M26 26L74 74M74 26L26 74\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "36",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-08",
+    "name": "Trail",
+    "pt": "Trilha",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "36",
+    "keywords": [
+      "trail",
+      "trilha",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M15 70L32 30L50 70L68 30L85 70Z\"/><path d=\"M15 82H85\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "36",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-09",
+    "name": "Grid",
+    "pt": "Grade",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "36",
+    "keywords": [
+      "grid",
+      "grade",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M18 18H82V82H18Z\"/><path d=\"M18 50H82M50 18V82\"/><circle cx=\"50\" cy=\"50\" r=\"13\" fill=\"var(--paper)\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "36",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-10",
+    "name": "Intersection",
+    "pt": "Interseção",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "36",
+    "keywords": [
+      "intersection",
+      "interseção",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M20 20H80V80H20Z\"/><path d=\"M30 30L70 70M70 30L30 70\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "36",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-11",
+    "name": "Hexagon marker",
+    "pt": "Marcador hexagonal",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "37",
+    "keywords": [
+      "hexagon marker",
+      "marcador hexagonal",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M50 12L86 34V66L50 88L14 66V34Z\"/><circle cx=\"50\" cy=\"50\" r=\"18\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "37",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-12",
+    "name": "Peak",
+    "pt": "Pico",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "37",
+    "keywords": [
+      "peak",
+      "pico",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M20 80L50 15L80 80Z\"/><path d=\"M31 60H69M38 45H62\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "37",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-13",
+    "name": "Signal",
+    "pt": "Sinal",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "37",
+    "keywords": [
+      "signal",
+      "sinal",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><circle cx=\"50\" cy=\"50\" r=\"34\"/><path d=\"M18 40H82M18 60H82\"/><circle cx=\"50\" cy=\"50\" r=\"11\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "37",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-14",
+    "name": "Volume",
+    "pt": "Volume",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "37",
+    "keywords": [
+      "volume",
+      "volume",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M50 12L84 32V68L50 88L16 68V32Z\"/><path d=\"M16 32L50 52L84 32M50 52V88\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "37",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-15",
+    "name": "Terrain",
+    "pt": "Terreno",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "37",
+    "keywords": [
+      "terrain",
+      "terreno",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M14 78L36 22L50 55L66 34L86 78Z\"/><path d=\"M25 65H77\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "37",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-16",
+    "name": "Matrix",
+    "pt": "Matriz",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "matrix",
+      "matriz",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M20 20H80V80H20Z\"/><path d=\"M20 40H80M40 20V80M60 20V80M20 60H80\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-17",
+    "name": "Bearing",
+    "pt": "Orientação",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "bearing",
+      "orientação",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><circle cx=\"50\" cy=\"50\" r=\"31\"/><path d=\"M50 19L62 40L50 50L38 40Z\"/><path d=\"M50 50L75 63L61 78L50 50Z\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-18",
+    "name": "Progress",
+    "pt": "Progresso",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "progress",
+      "progresso",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M18 78V22H82V78Z\"/><path d=\"M30 66L45 50L57 61L73 38\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-19",
+    "name": "Axis",
+    "pt": "Eixo",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "axis",
+      "eixo",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M12 50H88M50 12V88\"/><circle cx=\"50\" cy=\"50\" r=\"28\"/><circle cx=\"50\" cy=\"50\" r=\"8\" fill=\"currentColor\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-20",
+    "name": "Nested triangle",
+    "pt": "Triângulo interno",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "nested triangle",
+      "triângulo interno",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M15 80L50 15L85 80Z\"/><path d=\"M34 60L50 32L66 60Z\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-21",
+    "name": "Zone",
+    "pt": "Zona",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "zone",
+      "zona",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M20 20H80V80H20Z\" stroke-dasharray=\"5 5\"/><circle cx=\"50\" cy=\"50\" r=\"22\"/><path d=\"M50 28V72M28 50H72\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-22",
+    "name": "Cross mark",
+    "pt": "Marca cruzada",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "cross mark",
+      "marca cruzada",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M20 20L80 80M80 20L20 80\"/><circle cx=\"50\" cy=\"50\" r=\"31\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-23",
+    "name": "Star marker",
+    "pt": "Marcador estrela",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "star marker",
+      "marcador estrela",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M50 12L63 38L90 41L70 60L75 87L50 74L25 87L30 60L10 41L37 38Z\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-24",
+    "name": "Route",
+    "pt": "Rota",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "route",
+      "rota",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M20 80V20H80V80Z\"/><path d=\"M30 70L50 30L70 70Z\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-25",
+    "name": "Clock mark",
+    "pt": "Marca de tempo",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "clock mark",
+      "marca de tempo",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><circle cx=\"50\" cy=\"50\" r=\"34\"/><path d=\"M50 16L50 84M16 50L84 50\"/><path d=\"M35 35L65 65M65 35L35 65\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-26",
+    "name": "Six-sided marker",
+    "pt": "Marcador de seis lados",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "six-sided marker",
+      "marcador de seis lados",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M25 14H75L90 50L75 86H25L10 50Z\"/><circle cx=\"50\" cy=\"50\" r=\"21\"/><path d=\"M50 29V71M29 50H71\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-27",
+    "name": "Focus",
+    "pt": "Foco",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "focus",
+      "foco",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M18 20H82V80H18Z\"/><path d=\"M18 50H82M50 20V80\"/><circle cx=\"50\" cy=\"50\" r=\"20\" fill=\"var(--paper)\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-28",
+    "name": "X marker",
+    "pt": "Marcador X",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "x marker",
+      "marcador x",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M18 18L82 82M82 18L18 82\"/><path d=\"M18 50H82M50 18V82\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-29",
+    "name": "Signal peak",
+    "pt": "Pico de sinal",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "signal peak",
+      "pico de sinal",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><path d=\"M14 80L50 14L86 80Z\"/><path d=\"M30 66H70M38 50H62\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
+  },
+  {
+    "id": "study-30",
+    "name": "Time indicator",
+    "pt": "Indicador de tempo",
+    "category": "Accommodations and travel",
+    "meaning": "Estudo vetorial original do Symbols Studio, inspirado em linguagem gráfica de orientação e sinalização.",
+    "note": "Este desenho é um estudo contemporâneo criado para ampliar a biblioteca visual; não é uma reprodução certificada da prancha impressa.",
+    "page": "38",
+    "keywords": [
+      "time indicator",
+      "indicador de tempo",
+      "wayfinding",
+      "symbol",
+      "vector study"
+    ],
+    "glyph": "",
+    "kind": "visual",
+    "svgMarkup": "<svg viewBox=\"0 0 100 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"><circle cx=\"50\" cy=\"50\" r=\"34\" stroke-dasharray=\"6 5\"/><path d=\"M50 22V50L70 62\"/></svg>",
+    "source": {
+      "author": "Symbols Studio",
+      "title": "Original vector study",
+      "publisher": "Symbols Studio",
+      "year": 2026,
+      "page": "38",
+      "credit": "Estudo vetorial contemporâneo; não atribuído como desenho original de Dreyfuss."
+    }
   }
 ]
