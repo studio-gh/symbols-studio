@@ -135,11 +135,14 @@ Promise.all([
  fetch('./data/symbols.json').then(r=>{if(!r.ok)throw new Error('Could not load starter symbols');return r.json()}),
  fetch('./data/symbols-pages-batch01.json').then(r=>{if(!r.ok)throw new Error('Could not load vector batch 01');return r.json()}),
  fetch('./data/index-data.txt').then(r=>{if(!r.ok)throw new Error('Could not load book index');return r.text()}),
- fetch('./data/source-symbols-page40.json.gz.b64').then(r=>{if(!r.ok)throw new Error('Could not load sourcebook symbols');return r.text()})
-]).then(async ([starter,batch01,b64,sourceB64])=>{
+ fetch('./data/source-symbols-page40.json.gz.b64').then(r=>{if(!r.ok)throw new Error('Could not load sourcebook symbols');return r.text()}),
+ ...[34,35,36,37,38].map(page=>fetch(`./data/symbols-page${page}.json.gz`).then(r=>{if(!r.ok)throw new Error(`Could not load page ${page}`);return r.text()}).then(decodeGzipBase64).catch(error=>{console.warn('Page batch unavailable',page,error);return []}))
+]).then(async ([starter,batch01,b64,sourceB64,...pageBatches])=>{
  visuals=[...new Map([...starter,...batch01].map(r=>[r.id,{...r,kind:'visual'}])).values()];
  indexRecords=await parseIndex(b64);
- sourceSymbols=(await decodeGzipBase64(sourceB64)).map(r=>({...r,pt:r.name,category:'Agriculture · Agronomy',meaning:`Vector trace of the printed “${r.name}” symbol from the Agriculture / Agronomy plate.`,note:'Automated SVG contour trace from the scanned printed page. The vector is approximate and may reflect scan texture or imperfections; compare with the printed source before reuse.',keywords:[r.name.toLowerCase(),'agriculture','agronomy','symbol sourcebook','dreyfuss','page 40'],kind:'source-vector',source:{author:'Henry Dreyfuss',title:'Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols',publisher:'McGraw-Hill',year:1972,page:r.page,credit:'Automated vector trace of the printed scan; not the publisher’s original vector artwork.'}}));
+ const sourcePage40=(await decodeGzipBase64(sourceB64)).map(r=>({...r,pt:r.name,category:'Agriculture · Agronomy',meaning:`Vector trace of the printed “${r.name}” symbol from the Agriculture / Agronomy plate.`,note:'Automated SVG contour trace from the scanned printed page. The vector is approximate and may reflect scan texture or imperfections; compare with the printed source before reuse.',keywords:[r.name.toLowerCase(),'agriculture','agronomy','symbol sourcebook','dreyfuss','page 40'],kind:'source-vector',source:{author:'Henry Dreyfuss',title:'Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols',publisher:'McGraw-Hill',year:1972,page:r.page,credit:'Automated vector trace of the printed scan; not the publisher’s original vector artwork.'}}));
+ const existingSourceSymbols=pageBatches.flat().map(r=>({...r,pt:r.pt||r.name,category:r.category||categoryForPage(r.page),kind:'source-vector',keywords:r.keywords||[r.name.toLowerCase()],source:r.source||{author:'Henry Dreyfuss',title:'Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols',publisher:'McGraw-Hill',year:1972,page:r.page,credit:'Automated contour trace of the scanned printed source.'},note:r.note||'Automated SVG contour trace from the scanned printed page. The vector is approximate; compare with the printed source before reuse.'}));
+ sourceSymbols=[...existingSourceSymbols,...sourcePage40].filter(r=>r.svgMarkup||r.svgFile);
  renderFilters();render();
  $('#count').textContent=sourceSymbols.length+' sourcebook symbols';
  const sourceTab=document.querySelector('[data-view="source"]');
