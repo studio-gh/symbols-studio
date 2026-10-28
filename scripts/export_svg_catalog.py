@@ -8,12 +8,16 @@ from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-CATALOG = ROOT / "data" / "symbols-page34.json.gz"
+CATALOGS = sorted((ROOT / "data").glob("symbols-page*.json.gz"))
 SVG_ROOT = ROOT / "assets" / "symbols"
 DOWNLOAD_ROOT = ROOT / "assets" / "downloads"
-BUNDLE = DOWNLOAD_ROOT / "symbols-page-34-svg.zip"
+BUNDLE = DOWNLOAD_ROOT / "symbols-pages-34-36-svg.zip"
 
-entries = json.loads(gzip.decompress(CATALOG.read_bytes()).decode("utf-8"))
+entries = []
+for catalog_path in CATALOGS:
+    entries.extend(json.loads(gzip.decompress(catalog_path.read_bytes()).decode("utf-8")))
+if not entries:
+    raise FileNotFoundError("No compressed SVG catalogues found in data/")
 SVG_ROOT.mkdir(parents=True, exist_ok=True)
 DOWNLOAD_ROOT.mkdir(parents=True, exist_ok=True)
 written: list[Path] = []
@@ -31,11 +35,11 @@ for entry in entries:
     written.append(target)
 
 metadata = [{key: value for key, value in entry.items() if key != "svgMarkup"} for entry in entries]
-metadata_path = DOWNLOAD_ROOT / "metadata-page-34.json"
+metadata_path = DOWNLOAD_ROOT / "metadata-pages-34-36.json"
 metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 readme_path = DOWNLOAD_ROOT / "README.txt"
 readme_path.write_text(
-    "Symbols Studio — SVG batch, printed page 34\n"
+    "Symbols Studio — SVG batch, printed pages 34–36\n"
     f"{len(written)} individual SVG files, vectorized from the supplied scanned page.\n"
     "First-pass contour traces: review shapes manually before production use.\n"
     "Source: Henry Dreyfuss, Symbol Sourcebook, McGraw-Hill, 1972, p. 34.\n",
