@@ -10,9 +10,9 @@ Arquivo visual independente de símbolos gráficos, baseado no *Symbol Sourceboo
 - A interface separa **Visual symbols**, **Book index · text only** e a visualização local do PDF. A página inicial agora abre diretamente na coleção visual e oferece download de SVG individual nas fichas.
 - O site ainda não tem cada símbolo separado em uma ficha vetorial própria. Para acessar os desenhos reais já existentes no livro, use o visualizador local das pranchas. A transformação de cada quadro em uma ficha individual exige extração, redesenho e conferência símbolo por símbolo.
 
-A extração automática do índice pode conter erros de OCR. Confira a página citada no PDF antes de usar uma referência em publicação acadêmica ou comercial.
+A extração automática do índice pode conter erros de OCR. Confira a página citada no PDF antes de usar uma referência em publicação acadêmica ou comercial. Os 41 SVGs da página 34 são vetorização automatizada inicial e podem conter imperfeições nos contornos.
 
-## Publicação no GitHub Pages
+## SVGs individuais\n\nO catálogo compactado em `data/symbols-page34.json.gz` armazena cada desenho como SVG independente. O workflow usa `scripts/export_svg_catalog.py` para gerar arquivos `.svg` individuais e um ZIP de download durante a publicação. A primeira leva contém 41 símbolos da página impressa 34; isso não equivale ainda ao conteúdo visual completo do livro.\n\n## Publicação no GitHub Pages
 
 O workflow em `.github/workflows/pages.yml` publica os arquivos estáticos a cada push para `main`. Em **Settings → Pages**, mantenha Source como **GitHub Actions**.
 
