@@ -4,10 +4,11 @@ Arquivo visual independente de símbolos gráficos, baseado no *Symbol Sourceboo
 
 ## O que o site contém hoje
 
-- **15 redesenhos vetoriais esquemáticos** na coleção visual.
+- **15 redesenhos vetoriais esquemáticos** na coleção de estudos originais.
 - **1.825 entradas textuais do índice impresso**, com nomes e referências de páginas extraídos do PDF fornecido.
+- Uma aba **All sourcebook plates · local PDF** permite abrir as pranchas ilustradas no navegador. O PDF é selecionado localmente, sem ser enviado ao site. A galeria navega pelas páginas 26–247 do arquivo.
 - A interface agora separa **Visual symbols** de **Book index · text only**. As entradas do índice não são exibidas como se fossem desenhos de símbolos.
-- O catálogo visual ainda **não** contém todos os desenhos das 296 páginas do livro. Essa ampliação exige extração, redesenho e conferência símbolo por símbolo.
+- O site ainda não tem cada símbolo separado em uma ficha vetorial própria. Para acessar os desenhos reais já existentes no livro, use o visualizador local das pranchas. A transformação de cada quadro em uma ficha individual exige extração, redesenho e conferência símbolo por símbolo.
 
 A extração automática do índice pode conter erros de OCR. Confira a página citada no PDF antes de usar uma referência em publicação acadêmica ou comercial.
 
