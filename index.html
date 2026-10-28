@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f4ee">
+<meta name="description" content="Symbols Studio: arquivo visual de símbolos gráficos com referências ao Symbol Sourcebook, de Henry Dreyfuss (1972).">
+<title>Symbols Studio — A visual index of signs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f6f4ee;--ink:#20211f;--muted:#77776f;--line:#d9d7ce;--accent:#ff5b35;--white:#fffefa;--mono:"DM Mono",monospace;--sans:"Manrope",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans)}button,input{font:inherit}button{cursor:pointer}
+.topline{height:5px;background:var(--accent)}header{padding:22px clamp(20px,5vw,76px) 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:15px;font-weight:800;letter-spacing:-.06em}.brand span{color:var(--accent)}.topmeta,.eyebrow,.meta,.tag,.count,.footlabel{font:11px var(--mono);text-transform:uppercase;letter-spacing:.08em}.topmeta{color:var(--muted)}
+main{max-width:1600px;margin:auto;padding:clamp(28px,5vw,76px)}.hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);gap:48px;align-items:end;padding-bottom:52px}.eyebrow{color:var(--accent);margin:0 0 18px}.hero h1{font-size:clamp(48px,8.5vw,124px);line-height:.87;letter-spacing:-.095em;margin:0;max-width:900px;font-weight:600}.hero h1 em{font-weight:400;font-style:normal;color:var(--accent)}.intro{max-width:390px;font-size:15px;line-height:1.65;color:#5e5f58;margin:0 0 6px}.intro strong{color:var(--ink);font-weight:700}
+.sourceband{display:flex;justify-content:space-between;align-items:center;gap:24px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:14px 0;margin-bottom:30px;font:11px var(--mono);text-transform:uppercase;letter-spacing:.05em}.sourceband span:last-child{color:var(--muted);text-align:right}
+.controls{display:grid;grid-template-columns:minmax(220px,1fr) auto auto;gap:10px;margin-bottom:18px}.searchwrap{position:relative}.searchwrap input{width:100%;height:48px;border:1px solid var(--line);border-radius:0;background:var(--white);padding:0 16px 0 44px;outline:none}.searchwrap input:focus{border-color:var(--ink)}.searchicon{position:absolute;left:16px;top:15px;color:var(--muted)}.controlbtn{height:48px;background:transparent;border:1px solid var(--line);padding:0 17px;font-size:12px}.controlbtn:hover{border-color:var(--ink)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 28px}.filter{border:1px solid var(--line);background:transparent;padding:8px 12px;font:10px var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}.filter.active,.filter:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.gridhead{display:flex;justify-content:space-between;align-items:center;padding:0 0 12px;border-bottom:1px solid var(--line);margin-bottom:14px;color:var(--muted)}.symbolgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.symbolcard{min-width:0;border:1px solid var(--line);background:var(--white);padding:0;text-align:left;display:flex;flex-direction:column;transition:transform .18s,border-color .18s}.symbolcard:hover{transform:translateY(-3px);border-color:var(--ink)}.tile{aspect-ratio:1.05;display:grid;place-items:center;padding:24px;position:relative}.tile svg{width:68%;height:68%;max-width:112px;max-height:112px;color:var(--ink);overflow:visible}.tileindex{position:absolute;top:12px;left:12px;font:10px var(--mono);color:#9b9b92}.tilearrow{position:absolute;top:10px;right:12px;font-size:15px;color:var(--accent);opacity:0;transition:opacity .2s}.symbolcard:hover .tilearrow{opacity:1}.cardinfo{border-top:1px solid var(--line);padding:13px 14px 15px}.cardtitle{font-size:14px;letter-spacing:-.035em;font-weight:700;margin:0 0 5px}.cardpt{font-size:11px;color:var(--muted);margin:0}.cardbottom{display:flex;justify-content:space-between;gap:8px;margin-top:15px;align-items:center}.tag{font-size:9px;color:var(--muted);letter-spacing:.03em}.cardbottom .page{font:10px var(--mono);color:var(--muted)}
+.empty{padding:60px 10px;text-align:center;color:var(--muted);display:none}.empty strong{display:block;color:var(--ink);margin-bottom:8px}
+footer{padding:28px clamp(20px,5vw,76px);border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:30px;color:var(--muted);font-size:11px;line-height:1.6}.footercredit{max-width:650px}.footlabel{display:block;color:var(--ink);margin-bottom:7px}
+.modal{position:fixed;inset:0;z-index:10;display:none;align-items:center;justify-content:center;background:rgba(24,24,22,.58);padding:20px}.modal.open{display:flex}.dialog{width:min(100%,1000px);max-height:min(92vh,850px);overflow:auto;background:var(--paper);display:grid;grid-template-columns:1fr 1fr;position:relative}.close{position:absolute;top:16px;right:16px;z-index:2;width:38px;height:38px;border:1px solid var(--line);background:var(--paper);font-size:20px}.modalart{min-height:430px;background:var(--white);border-right:1px solid var(--line);display:grid;place-items:center;position:relative;padding:50px}.modalart svg{width:min(75%,300px);height:auto;max-height:330px;color:var(--ink)}.artlabel{position:absolute;bottom:18px;left:22px;font:10px var(--mono);color:var(--muted);text-transform:uppercase}.modalcontent{padding:clamp(28px,4vw,56px)}.modalcontent h2{font-size:clamp(34px,4vw,54px);line-height:.95;letter-spacing:-.07em;margin:10px 0 8px}.translated{font-size:14px;color:var(--muted);margin:0 0 34px}.modalcontent h3{font:10px var(--mono);text-transform:uppercase;letter-spacing:.1em;margin:26px 0 9px;color:var(--muted)}.modalcontent p{font-size:14px;line-height:1.65;margin:0}.sourcebox{border-top:1px solid var(--line);margin-top:30px;padding-top:18px}.sourcebox p{font-size:12px;line-height:1.6}.sourcebox strong{display:block;font-size:13px;margin-bottom:4px}.modalactions{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.modalactions button{background:transparent;border:1px solid var(--line);padding:10px 12px;font:10px var(--mono);text-transform:uppercase}.modalactions button:hover{background:var(--ink);color:var(--paper)}
+@media(max-width:1000px){.symbolgrid{grid-template-columns:repeat(4,minmax(0,1fr))}.hero{grid-template-columns:1fr;gap:28px}.intro{max-width:550px}.hero h1{font-size:clamp(58px,12vw,100px)}}
+@media(max-width:700px){header{padding:18px 20px}.topmeta{font-size:9px;text-align:right}main{padding:36px 18px}.hero{padding-bottom:35px}.hero h1{font-size:clamp(54px,15vw,88px)}.intro{font-size:14px}.sourceband{align-items:flex-start;flex-direction:column;gap:7px}.sourceband span:last-child{text-align:left}.controls{grid-template-columns:1fr 1fr}.searchwrap{grid-column:1/-1}.symbolgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.tile{padding:18px}.cardinfo{padding:12px}.dialog{grid-template-columns:1fr;max-height:94vh}.modalart{min-height:260px;border-right:0;border-bottom:1px solid var(--line);padding:40px}.modalart svg{width:150px;height:150px}.modalcontent{padding:28px 24px}.close{top:10px;right:10px}footer{padding:24px 20px;flex-direction:column;gap:18px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header><div class="brand">SYMBOLS<span>.</span>STUDIO</div><div class="topmeta">A living index of graphic signs / vol. 01</div></header>
+<main>
+<section class="hero">
+ <div><p class="eyebrow">Archive / 001 — Graphic language</p><h1>Signs say<br>more than <em>words.</em></h1></div>
+ <p class="intro">Um arquivo visual para observar como símbolos organizam informação, orientação e significado. Esta primeira coleção parte dos <strong>símbolos básicos</strong> documentados por Henry Dreyfuss em 1972.</p>
+</section>
+<div class="sourceband"><span>Field notes · Basic symbols</span><span>Sourcebook / Henry Dreyfuss / 1972</span></div>
+<section aria-label="Pesquisar símbolos">
+ <div class="controls">
+  <div class="searchwrap"><span class="searchicon">⌕</span><input id="search" type="search" placeholder="Buscar por nome, significado ou palavra-chave..." aria-label="Buscar símbolos"></div>
+  <button class="controlbtn" id="random">↗ Símbolo aleatório</button>
+  <button class="controlbtn" id="reset">Limpar filtros ×</button>
+ </div>
+ <div class="filters" id="filters"></div>
+ <div class="gridhead"><span class="eyebrow" style="margin:0">Index / 01</span><span class="count" id="count">15 registros</span></div>
+ <div class="symbolgrid" id="grid"></div><div class="empty" id="empty"><strong>Nenhum símbolo encontrado.</strong>Tente outra busca ou remova os filtros.</div>
+</section>
+</main>
+<footer>
+ <div class="footercredit"><span class="footlabel">Source & attribution</span>Conteúdo de referência baseado em <em>Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols</em>, de Henry Dreyfuss, publicado pela McGraw-Hill em 1972. As descrições em português são sínteses editoriais do Symbols Studio. A reprodução dos desenhos originais não está incluída nesta versão.</div>
+ <div><span class="footlabel">Symbols Studio</span>Independent visual research<br>Built for curious eyes.</div>
+</footer>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+ <div class="dialog"><button class="close" id="close" aria-label="Fechar">×</button><div class="modalart" id="modal-art"><span class="artlabel">Visual study / original redraw</span></div><div class="modalcontent">
+ <p class="eyebrow" id="modal-category">Basic symbols</p><h2 id="modal-title">Symbol</h2><p class="translated" id="modal-pt"></p>
+ <h3>Meaning / significado</h3><p id="modal-meaning"></p><h3>Editorial note</h3><p id="modal-note"></p>
+ <div class="sourcebox"><h3>Bibliographic reference</h3><strong id="modal-source-title"></strong><p id="modal-source"></p></div>
+ <div class="modalactions"><button id="copy-credit">Copiar referência</button><button id="copy-link">Copiar link da ficha</button></div>
+ </div></div>
+</div>
+<script>
+const BOOK = 'Henry Dreyfuss, Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols. New York: McGraw-Hill, 1972.';
+let records=[], activeCategory='All';
+const $=s=>document.querySelector(s);
+const shapes={
+ prohibition:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6"><circle cx="50" cy="50" r="31"/><path d="M28 28L72 72"/></svg>`,
+ restriction:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6"><path d="M50 12L86 82H14Z"/><path d="M50 37V57M50 69V71"/></svg>`,
+ warning:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5"><path d="M50 10L91 84H9Z"/><path d="M50 36V58M50 69V71" stroke-width="7"/></svg>`,
+ left:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"><path d="M80 50H22M45 25L20 50L45 75"/></svg>`,
+ right:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"><path d="M20 50H78M55 25L80 50L55 75"/></svg>`,
+ up:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"><path d="M50 80V22M25 45L50 20L75 45"/></svg>`,
+ down:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"><path d="M50 20V78M25 55L50 80L75 55"/></svg>`,
+ on:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"><path d="M50 14V52"/><path d="M30 27A34 34 0 1 0 70 27"/></svg>`,
+ off:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"><path d="M50 15V51"/><path d="M30 27A34 34 0 1 0 70 27" stroke-dasharray="52 20"/></svg>`,
+ male:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6"><circle cx="42" cy="58" r="23"/><path d="M58 42L82 18M62 18H82V38"/></svg>`,
+ female:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6"><circle cx="50" cy="38" r="23"/><path d="M50 61V89M35 77H65"/></svg>`,
+ empty:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5"><rect x="20" y="18" width="60" height="64"/><path d="M26 75H74" stroke-dasharray="3 6"/></svg>`,
+ full:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5"><rect x="20" y="18" width="60" height="64"/><path d="M22 48H78V80H22Z" fill="currentColor" stroke="none"/></svg>`,
+ small:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5"><rect x="37" y="37" width="26" height="26"/></svg>`,
+ large:`<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5"><rect x="13" y="13" width="74" height="74"/></svg>`
+};
+function svgFor(r){return shapes[r.glyph]||'<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="5"/></svg>'}
+function escapeHtml(s=''){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function filtered(){const q=$('#search').value.trim().toLowerCase();return records.filter(r=>(activeCategory==='All'||r.category===activeCategory)&&(!q||[r.name,r.pt,r.meaning,r.note,...r.keywords].join(' ').toLowerCase().includes(q)))}
+function renderFilters(){const cats=['All',...new Set(records.map(r=>r.category))];$('#filters').innerHTML=cats.map(c=>`<button class="filter ${c===activeCategory?'active':''}" data-category="${escapeHtml(c)}">${c==='All'?'All symbols':escapeHtml(c)}</button>`).join('');$('#filters').querySelectorAll('button').forEach(b=>b.onclick=()=>{activeCategory=b.dataset.category;renderFilters();render()})}
+function render(){const rows=filtered();$('#grid').innerHTML=rows.map((r,i)=>`<button class="symbolcard" data-id="${r.id}" aria-label="Abrir ficha ${escapeHtml(r.name)}"><div class="tile"><span class="tileindex">${String(i+1).padStart(2,'0')}</span><span class="tilearrow">↗</span>${svgFor(r)}</div><div class="cardinfo"><p class="cardtitle">${escapeHtml(r.name)}</p><p class="cardpt">${escapeHtml(r.pt)}</p><div class="cardbottom"><span class="tag">${escapeHtml(r.category)}</span><span class="page">p. ${escapeHtml(r.page)}</span></div></div></button>`).join('');$('#count').textContent=`${rows.length} ${rows.length===1?'registro':'registros'}`;$('#empty').style.display=rows.length?'none':'block';$('#grid').style.display=rows.length?'grid':'none';$('#grid').querySelectorAll('.symbolcard').forEach(b=>b.onclick=()=>openRecord(b.dataset.id))}
+function openRecord(id){const r=records.find(x=>x.id===id);if(!r)return;$('#modal-category').textContent=r.category;$('#modal-title').textContent=r.name;$('#modal-pt').textContent=r.pt;$('#modal-meaning').textContent=r.meaning;$('#modal-note').textContent=r.note;$('#modal-art').innerHTML=svgFor(r)+'<span class="artlabel">Visual study / original redraw</span>';$('#modal-source-title').textContent=r.source.title;$('#modal-source').textContent=`${r.source.author}. ${r.source.title}. ${r.source.publisher}, ${r.source.year}, p. ${r.source.page}. ${r.source.credit}`;$('#copy-credit').onclick=()=>copyText(`${r.source.author}. ${r.source.title}. ${r.source.publisher}, ${r.source.year}, p. ${r.source.page}.`);$('#copy-link').onclick=()=>{location.hash=r.id;copyText(location.href)};$('#modal').classList.add('open');document.body.style.overflow='hidden';history.replaceState(null,'','#'+r.id)}
+function closeModal(){ $('#modal').classList.remove('open');document.body.style.overflow='';history.replaceState(null,'',location.pathname+location.search)}
+async function copyText(t){try{await navigator.clipboard.writeText(t);const old=$('#copy-credit').textContent;$('#copy-credit').textContent='Copiado ✓';setTimeout(()=>$('#copy-credit').textContent=old,1300)}catch(e){prompt('Copie a referência:',t)}}
+$('#search').addEventListener('input',render);$('#reset').onclick=()=>{$('#search').value='';activeCategory='All';renderFilters();render()};$('#random').onclick=()=>{const rows=filtered();if(rows.length)openRecord(rows[Math.floor(Math.random()*rows.length)].id)};$('#close').onclick=closeModal;$('#modal').addEventListener('click',e=>{if(e.target===$('#modal'))closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+fetch('./data/symbols.json').then(r=>r.json()).then(data=>{records=data;renderFilters();render();const id=location.hash.slice(1);if(id)openRecord(id)}).catch(()=>{$('#count').textContent='Erro ao carregar o índice';});
+</script>
+</body></html>

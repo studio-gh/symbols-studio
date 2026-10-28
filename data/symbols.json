@@ -1,0 +1,340 @@
+[
+  {
+    "id": "prohibition",
+    "name": "Prohibition",
+    "pt": "Proibição",
+    "category": "Basic symbols",
+    "meaning": "Indica uma ação proibida ou que não deve ser realizada.",
+    "note": "O livro apresenta a proibição entre os símbolos básicos que reaparecem em diferentes disciplinas. Esta ficha resume a categoria; não reproduz o desenho original da página.",
+    "page": "26",
+    "keywords": [
+      "não",
+      "proibido",
+      "restrição"
+    ],
+    "glyph": "prohibition",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "restriction",
+    "name": "Restriction",
+    "pt": "Restrição",
+    "category": "Basic symbols",
+    "meaning": "Sinaliza uma limitação, condição ou alcance restrito.",
+    "note": "Classificado por Dreyfuss no conjunto de símbolos básicos. A interpretação específica depende do contexto em que o sinal é aplicado.",
+    "page": "26",
+    "keywords": [
+      "limite",
+      "condição"
+    ],
+    "glyph": "restriction",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "warning",
+    "name": "Warning",
+    "pt": "Alerta",
+    "category": "Basic symbols",
+    "meaning": "Chama a atenção para um risco, cuidado ou condição que exige atenção.",
+    "note": "O livro lista Warning entre os símbolos básicos. Esta descrição é uma síntese editorial, não uma transcrição literal.",
+    "page": "26",
+    "keywords": [
+      "cuidado",
+      "risco",
+      "atenção"
+    ],
+    "glyph": "warning",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "left",
+    "name": "Left",
+    "pt": "Esquerda",
+    "category": "Basic symbols",
+    "meaning": "Indica direção ou movimento para a esquerda.",
+    "note": "O livro inclui direções como esquerda, direita, cima e baixo no grupo de símbolos básicos.",
+    "page": "26",
+    "keywords": [
+      "direção",
+      "seta",
+      "navegação"
+    ],
+    "glyph": "left",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "right",
+    "name": "Right",
+    "pt": "Direita",
+    "category": "Basic symbols",
+    "meaning": "Indica direção ou movimento para a direita.",
+    "note": "O livro inclui direções como esquerda, direita, cima e baixo no grupo de símbolos básicos.",
+    "page": "26",
+    "keywords": [
+      "direção",
+      "seta",
+      "navegação"
+    ],
+    "glyph": "right",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "up",
+    "name": "Up",
+    "pt": "Cima",
+    "category": "Basic symbols",
+    "meaning": "Indica movimento, orientação ou posição para cima.",
+    "note": "O livro inclui direções como esquerda, direita, cima e baixo no grupo de símbolos básicos.",
+    "page": "26",
+    "keywords": [
+      "direção",
+      "vertical"
+    ],
+    "glyph": "up",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "down",
+    "name": "Down",
+    "pt": "Baixo",
+    "category": "Basic symbols",
+    "meaning": "Indica movimento, orientação ou posição para baixo.",
+    "note": "O livro inclui direções como esquerda, direita, cima e baixo no grupo de símbolos básicos.",
+    "page": "26",
+    "keywords": [
+      "direção",
+      "vertical"
+    ],
+    "glyph": "down",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "on",
+    "name": "On",
+    "pt": "Ligado",
+    "category": "Basic symbols",
+    "meaning": "Representa o estado ativo, ligado ou em funcionamento.",
+    "note": "“On” aparece na prancha de símbolos básicos. O significado operacional pode variar conforme o equipamento ou sistema.",
+    "page": "26",
+    "keywords": [
+      "ativo",
+      "energia",
+      "interruptor"
+    ],
+    "glyph": "on",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "off",
+    "name": "Off",
+    "pt": "Desligado",
+    "category": "Basic symbols",
+    "meaning": "Representa o estado inativo ou desligado.",
+    "note": "“Off” aparece na prancha de símbolos básicos. O significado operacional pode variar conforme o equipamento ou sistema.",
+    "page": "26",
+    "keywords": [
+      "inativo",
+      "energia",
+      "interruptor"
+    ],
+    "glyph": "off",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "male",
+    "name": "Male",
+    "pt": "Masculino",
+    "category": "Basic symbols",
+    "meaning": "Identifica uma referência masculina em sistemas que distinguem essa categoria.",
+    "note": "O livro apresenta “Male” e “Female” entre os símbolos básicos; a aplicação deve respeitar o contexto e evitar pressupostos desnecessários.",
+    "page": "26",
+    "keywords": [
+      "gênero",
+      "identificação"
+    ],
+    "glyph": "male",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "female",
+    "name": "Female",
+    "pt": "Feminino",
+    "category": "Basic symbols",
+    "meaning": "Identifica uma referência feminina em sistemas que distinguem essa categoria.",
+    "note": "O livro apresenta “Male” e “Female” entre os símbolos básicos; a aplicação deve respeitar o contexto e evitar pressupostos desnecessários.",
+    "page": "26",
+    "keywords": [
+      "gênero",
+      "identificação"
+    ],
+    "glyph": "female",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "empty",
+    "name": "Empty",
+    "pt": "Vazio",
+    "category": "Basic symbols",
+    "meaning": "Indica ausência de conteúdo ou nível vazio.",
+    "note": "“Empty” e “Full” são apresentados como pares de contraste no conjunto de símbolos básicos.",
+    "page": "26",
+    "keywords": [
+      "nível",
+      "quantidade",
+      "estado"
+    ],
+    "glyph": "empty",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "full",
+    "name": "Full",
+    "pt": "Cheio",
+    "category": "Basic symbols",
+    "meaning": "Indica conteúdo completo ou nível cheio.",
+    "note": "“Empty” e “Full” são apresentados como pares de contraste no conjunto de símbolos básicos.",
+    "page": "26",
+    "keywords": [
+      "nível",
+      "quantidade",
+      "estado"
+    ],
+    "glyph": "full",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "small",
+    "name": "Small",
+    "pt": "Pequeno",
+    "category": "Basic symbols",
+    "meaning": "Representa uma dimensão ou escala pequena em relação a uma referência.",
+    "note": "“Small” aparece no grupo de símbolos básicos. A comparação visual depende do sistema em que o sinal é utilizado.",
+    "page": "26",
+    "keywords": [
+      "tamanho",
+      "escala"
+    ],
+    "glyph": "small",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  },
+  {
+    "id": "large",
+    "name": "Large",
+    "pt": "Grande",
+    "category": "Basic symbols",
+    "meaning": "Representa uma dimensão ou escala grande em relação a uma referência.",
+    "note": "Ficha complementar editorial para explorar o par de escala; confirmar a ocorrência e a paginação exata na edição usada antes de publicar como item definitivo.",
+    "page": "26",
+    "keywords": [
+      "tamanho",
+      "escala"
+    ],
+    "glyph": "large",
+    "source": {
+      "author": "Henry Dreyfuss",
+      "title": "Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols",
+      "publisher": "McGraw-Hill",
+      "year": 1972,
+      "page": "26",
+      "credit": "Referência bibliográfica: Henry Dreyfuss, Symbol Sourcebook (McGraw-Hill, 1972), p. 26. Descrição editorial do Symbols Studio."
+    }
+  }
+]
