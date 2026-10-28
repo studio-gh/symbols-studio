@@ -31,20 +31,20 @@ footer{padding:28px clamp(20px,5vw,76px);border-top:1px solid var(--line);displa
 <header><div class="brand">SYMBOLS<span>.</span>STUDIO</div><div class="topmeta">Visual archive / vol. 01</div></header>
 <main>
 <section class="hero">
- <div><p class="eyebrow">Archive / 001 — Graphic language</p><h1>Signs say<br>more than <em>words.</em></h1></div>
- <p class="intro">Biblioteca visual em expansão: símbolos de orientação, formas geométricas e estudos vetoriais originais, acompanhados de referência e contexto. Os estudos autorais ficam separados de reproduções do <em>Symbol Sourcebook</em>. Novos desenhos serão acrescentados à galeria conforme forem validados.</p>
+ <div><p class="eyebrow">Visual archive / 001 — Dreyfuss, 1972</p><h1>A world of<br><em>symbols.</em></h1></div>
+ <p class="intro">Um arquivo visual para explorar a linguagem dos símbolos. Pesquise o índice do <em>Symbol Sourcebook</em>, navegue pelas pranchas ilustradas do seu PDF e abra fichas com referências de origem. Estudos vetoriais autorais ficam identificados à parte, sem se passar por reproduções do livro.</p>
 </section>
-<div class="sourceband"><span id="section-label">Complete book index · text references</span><span>1,825 referências textuais · biblioteca visual em expansão</span></div>
+<div class="sourceband"><span id="section-label">Visual index · sourcebook 1972</span><span>Busca · categorias · pranchas locais</span></div>
 <nav class="tabs" aria-label="Modo de navegação">
- <button class="tab active" data-view="visual">Visual library</button>
- <button class="tab" data-view="index">Full index · 1,825 references</button>
- <button class="tab" data-view="plates">All sourcebook plates · local PDF</button>
+ <button class="tab active" data-view="index">Book index · 1,825 refs</button>
+ <button class="tab" data-view="plates">Illustrated pages · local PDF</button>
+ <button class="tab" data-view="visual">Vector studies · 45</button>
 </nav>
 <section aria-label="Pesquisar símbolos">
  <div class="controls">
-  <div class="searchwrap"><span class="searchicon">⌕</span><input id="search" type="search" placeholder="Buscar símbolo por nome, significado ou palavra-chave..." aria-label="Buscar no índice textual"></div>
-  <button class="controlbtn" id="random">↗ Símbolo aleatório</button>
-  <button class="controlbtn" id="reset">Limpar busca ×</button>
+  <div class="searchwrap"><span class="searchicon">⌕</span><input id="search" type="search" placeholder="Search names, meanings, page references…" aria-label="Search the sourcebook index"></div>
+  <button class="controlbtn" id="random">↗ Shuffle</button>
+  <button class="controlbtn" id="reset">Clear ×</button>
  </div>
  <div class="filters" id="filters"></div>
  <div class="gridhead"><span class="eyebrow" id="gridlabel">Símbolos vetoriais</span><span class="count" id="count">Carregando…</span></div>
@@ -53,14 +53,14 @@ footer{padding:28px clamp(20px,5vw,76px);border-top:1px solid var(--line);displa
  <div class="indexlist" id="index-list"></div>
  <div class="loadmore-wrap" id="loadmore-wrap" style="display:none"><button class="controlbtn" id="load-more">Carregar mais 240 ↓</button></div>
  <div class="empty" id="empty"><strong>Nenhum resultado encontrado.</strong>Tente outra busca ou remova os filtros.</div>
- <p class="statusnote" id="statusnote">O índice textual ajuda a localizar páginas, mas não substitui os desenhos. Para ver as pranchas ilustradas completas, abra “All sourcebook plates” e selecione seu PDF. O arquivo permanece local no navegador.</p>
+ <p class="statusnote" id="statusnote">Text index entries are references, not symbol drawings. Open “Illustrated pages” and choose your own PDF to browse the original plates privately in this browser.</p>
  <div id="plates-interface" style="display:none">
   <div class="plate-uploader">
-   <p class="eyebrow">Private sourcebook viewer</p>
-   <h3>Explore the illustrated sourcebook</h3>
-   <p>Selecione o PDF do <em>Symbol Sourcebook</em> que você já tem. O arquivo é lido diretamente neste navegador e não é enviado para o GitHub ou para um servidor. A galeria organiza as páginas ilustradas para navegar pelas pranchas do livro.</p>
+   <p class="eyebrow">Your local source</p>
+   <h3>Browse the original illustrated pages</h3>
+   <p>Choose your copy of <em>Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols</em>. The PDF is read locally in this browser. It is not uploaded to the site, GitHub, or a server. Thumbnails are generated on demand as you scroll.</p>
    <input id="book-file" type="file" accept="application/pdf,.pdf" aria-label="Selecionar o PDF do Symbol Sourcebook">
-   <div class="plate-progress" id="plate-progress">Aguardando o PDF. Nenhum arquivo será enviado.</div>
+   <div class="plate-progress" id="plate-progress">Choose a PDF to begin. Your file stays on this device.</div>
   </div>
   <div class="plate-grid" id="plate-grid"></div>
  </div>
@@ -68,7 +68,7 @@ footer{padding:28px clamp(20px,5vw,76px);border-top:1px solid var(--line);displa
 </main>
 <footer>
  <div class="footercredit"><span class="footlabel">Source & attribution</span>Referência: <em>Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols</em>, Henry Dreyfuss, McGraw-Hill, 1972. Os redesenhos são estudos vetoriais esquemáticos do Symbols Studio, não fac-símiles. As entradas do índice são texto e referências de página, não imagens dos símbolos. Confira a edição original antes de citar.</div>
- <div><span class="footlabel">Symbols Studio</span>Independent visual research<br>Built for curious eyes.</div>
+ <div><span class="footlabel">Symbols Studio</span>Independent visual research<br>Research edition · 2026.</div>
 </footer>
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
  <div class="dialog"><button class="close" id="close" aria-label="Fechar">×</button><div class="modalart" id="modal-art"><span class="artlabel">Visual study / original redraw</span></div><div class="modalcontent">
@@ -80,7 +80,7 @@ footer{padding:28px clamp(20px,5vw,76px);border-top:1px solid var(--line);displa
 </div>
 <script>
 const BOOK = 'Henry Dreyfuss, Symbol Sourcebook: An Authoritative Guide to International Graphic Symbols. New York: McGraw-Hill, 1972.';
-let visuals=[], indexRecords=[], activeCategory='All', currentView='visual', displayLimit=240, records=[];
+let visuals=[], indexRecords=[], activeCategory='All', currentView='index', displayLimit=240, records=[];
 const $=s=>document.querySelector(s);
 function slugify(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||'entry'}
 function categoryForPage(refs){const n=Number(String(refs).match(/\d{1,3}/)?.[0]||0);const ranges=[[34,38,'Accommodations and travel'],[39,47,'Agriculture'],[48,53,'Architecture'],[54,54,'Astronomy'],[55,57,'Biology'],[58,66,'Business'],[67,69,'Chemistry'],[70,79,'Communications'],[80,85,'Engineering'],[86,91,'Folklore'],[92,95,'Geography'],[96,97,'Geology'],[98,99,'Handling of goods'],[100,103,'Home economics'],[104,110,'Manufacturing'],[111,112,'Mathematics'],[113,119,'Medicine'],[120,122,'Meteorology'],[123,125,'Music'],[126,127,'Photography'],[128,129,'Physics'],[130,137,'Recreation'],[138,139,'Religion'],[140,142,'Safety'],[143,156,'Traffic'],[157,165,'Vehicle controls'],[166,230,'Graphic form'],[231,247,'Color']];return ranges.find(([a,b])=>n>=a&&n<=b)?.[2]||(n>=26&&n<=33?'Basic symbols & principles':'Index / uncategorized')}
