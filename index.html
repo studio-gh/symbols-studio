@@ -139,7 +139,10 @@ Promise.all([
  renderFilters();render();
  $('#count').textContent=visuals.length+' visual symbols';
  const visualTab=document.querySelector('[data-view="visual"]');
- if(visualTab)visualTab.textContent='Visual symbols · '+visuals.length;
+ if(visualTab)visualTab.textContent='Vector studies · '+visuals.length;
+ const indexTab=document.querySelector('[data-view="index"]');
+ if(indexTab)indexTab.textContent=`Book index · ${indexRecords.length.toLocaleString('en-US')} refs`;
+ setView('index');
  $('#download-batch').href='./assets/downloads/symbols-pages-svg.zip';
  $('#download-batch').textContent=visuals.length+' schematic SVG studies (optional ZIP)';
 }).catch(err=>{
