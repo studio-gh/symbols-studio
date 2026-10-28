@@ -1,63 +1,54 @@
 #!/usr/bin/env python3
-"""Validate uploaded page-level SVG metadata and export standalone symbols."""
+"""Build the page-by-page Symbols Studio vector catalogue for GitHub Pages."""
 from __future__ import annotations
-import gzip, json, sys
+import gzip, json, re
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data"
-SVG_ROOT = ROOT / "assets" / "symbols"
-DOWNLOAD_ROOT = ROOT / "assets" / "downloads"
-BUNDLE = DOWNLOAD_ROOT / "symbols-pages-34-36-svg.zip"
-pages = [34, 35, 36]
-entries = []
-for page in pages:
-    path = DATA_DIR / f"symbols-page{page}.json.gz"
-    try:
-        items = json.loads(gzip.decompress(path.read_bytes()).decode("utf-8"))
-    except Exception as exc:
-        print(f"Invalid compressed catalogue {path}: {exc}", file=sys.stderr)
-        raise
-    if not isinstance(items, list) or not items:
-        raise ValueError(f"Empty catalogue for page {page}")
-    if any(str(item.get("page")) != str(page) for item in items):
-        raise ValueError(f"Wrong source page metadata in {path}")
-    entries.extend(items)
+DATA = ROOT / "data"
+ASSETS = ROOT / "assets" / "symbols"
+DOWNLOADS = ROOT / "assets" / "downloads"
+ASSETS.mkdir(parents=True, exist_ok=True)
+DOWNLOADS.mkdir(parents=True, exist_ok=True)
 
-SVG_ROOT.mkdir(parents=True, exist_ok=True)
-DOWNLOAD_ROOT.mkdir(parents=True, exist_ok=True)
-written = []
-for entry in entries:
-    markup = entry.get("svgMarkup")
-    filename = entry.get("svgFile", "")
-    relative = str(filename).removeprefix("./")
-    if not markup or not markup.lstrip().startswith("<svg"):
-        raise ValueError(f"Missing SVG markup for {entry.get('id')}")
-    if not relative.startswith("assets/symbols/") or not relative.endswith(".svg"):
-        raise ValueError(f"Unexpected SVG output path: {relative}")
-    if "xmlns=" not in markup[:250]:
-        markup = markup.replace("<svg", '<svg xmlns="http://www.w3.org/2000/svg"', 1)
-    target = ROOT / relative
-    target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(markup + "\n", encoding="utf-8")
-    written.append(target)
+def clean_id(value: str) -> str:
+    return re.sub(r"[^a-zA-Z0-9_-]+", "-", value).strip("-").lower()[:100] or "symbol"
 
-metadata = [{k:v for k,v in item.items() if k != "svgMarkup"} for item in entries]
-metadata_path = DOWNLOAD_ROOT / "metadata-pages-34-36.json"
-metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-readme_path = DOWNLOAD_ROOT / "README.txt"
-readme_path.write_text(
-    "Symbols Studio — SVG batch, printed pages 34–36\n"
-    f"{len(written)} individual SVG files, vectorized from scanned sourcebook pages 34–36.\n"
-    "First-pass contour traces: review shapes manually before production use.\n"
-    "Source: Henry Dreyfuss, Symbol Sourcebook, McGraw-Hill, 1972, printed pages 34–36.\n",
-    encoding="utf-8",
+records = []
+seen = set()
+for page in range(34, 39):
+    source = DATA / f"symbols-page{page}.json.gz"
+    items = json.loads(gzip.decompress(source.read_bytes()).decode("utf-8"))
+    if not items or any(str(item.get("page")) != str(page) for item in items):
+        raise ValueError(f"Source page mismatch: {page}")
+    for item in items:
+        svg = item.get("svgMarkup", "")
+        if not svg.strip().startswith("<svg"):
+            raise ValueError(f"Missing SVG markup: {item.get('id')}")
+        if 'xmlns=' not in svg[:260]:
+            svg = svg.replace("<svg", '<svg xmlns="http://www.w3.org/2000/svg"', 1)
+        key = clean_id(str(item.get("id") or f"page-{page}-symbol"))
+        filename = f"{key}.svg"
+        if filename in seen:
+            filename = f"{key}-p{page}.svg"
+        seen.add(filename)
+        (ASSETS / filename).write_text(svg.rstrip() + "\n", encoding="utf-8")
+        item["svgFile"] = f"./assets/symbols/{filename}"
+        item["svgMarkup"] = svg
+        item["kind"] = "visual"
+        records.append(item)
+
+if len(records) != 177:
+    raise ValueError(f"Expected 177 real sourcebook vector records, found {len(records)}")
+(DATA / "symbols-pages-batch01.json").write_text(
+    json.dumps(records, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8"
 )
-with ZipFile(BUNDLE, "w", ZIP_DEFLATED) as archive:
-    for path in written:
-        archive.write(path, path.relative_to(SVG_ROOT))
-    archive.write(metadata_path, "metadata.json")
-    archive.write(readme_path, "README.txt")
-print(f"Exported {len(written)} standalone SVGs to {SVG_ROOT}")
-print(f"Created {BUNDLE}")
+with ZipFile(DOWNLOADS / "symbols-pages-34-38-svg.zip", "w", ZIP_DEFLATED) as archive:
+    for path in sorted(ASSETS.glob("*.svg")):
+        archive.write(path, path.name)
+    archive.writestr("metadata.json", json.dumps(
+        [{k:v for k,v in r.items() if k != "svgMarkup"} for r in records],
+        ensure_ascii=False, indent=2
+    ) + "\n")
+print("Published 177 individual SVGs from printed pages 34–38.")
